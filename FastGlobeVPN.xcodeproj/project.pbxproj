@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3983AFEA28E5A92C003E44AE /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983AFE928E5A92C003E44AE /* LaunchScreen.swift */; };
 		399EB40E28E39A4D000F7822 /* FastGlobeVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399EB40D28E39A4D000F7822 /* FastGlobeVPNApp.swift */; };
-		399EB41028E39A4D000F7822 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399EB40F28E39A4D000F7822 /* ContentView.swift */; };
+		399EB41028E39A4D000F7822 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399EB40F28E39A4D000F7822 /* MainView.swift */; };
 		399EB41228E39A4E000F7822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399EB41128E39A4E000F7822 /* Assets.xcassets */; };
 		399EB41528E39A4E000F7822 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399EB41428E39A4E000F7822 /* Preview Assets.xcassets */; };
+		399EB42028E4ED4B000F7822 /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399EB41F28E4ED4B000F7822 /* VPNManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3983AFE928E5A92C003E44AE /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		399EB40A28E39A4D000F7822 /* FastGlobeVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastGlobeVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		399EB40D28E39A4D000F7822 /* FastGlobeVPNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastGlobeVPNApp.swift; sourceTree = "<group>"; };
-		399EB40F28E39A4D000F7822 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		399EB40F28E39A4D000F7822 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		399EB41128E39A4E000F7822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		399EB41428E39A4E000F7822 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		399EB41F28E4ED4B000F7822 /* VPNManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
+		399EB42428E4F44B000F7822 /* FastGlobeVPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FastGlobeVPN.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,7 @@
 		399EB40128E39A4D000F7822 = {
 			isa = PBXGroup;
 			children = (
+				399EB41F28E4ED4B000F7822 /* VPNManager.swift */,
 				399EB40C28E39A4D000F7822 /* FastGlobeVPN */,
 				399EB40B28E39A4D000F7822 /* Products */,
 			);
@@ -51,8 +57,9 @@
 		399EB40C28E39A4D000F7822 /* FastGlobeVPN */ = {
 			isa = PBXGroup;
 			children = (
+				39F775A828E62200009854E2 /* Views */,
+				399EB42428E4F44B000F7822 /* FastGlobeVPN.entitlements */,
 				399EB40D28E39A4D000F7822 /* FastGlobeVPNApp.swift */,
-				399EB40F28E39A4D000F7822 /* ContentView.swift */,
 				399EB41128E39A4E000F7822 /* Assets.xcassets */,
 				399EB41328E39A4E000F7822 /* Preview Content */,
 			);
@@ -65,6 +72,15 @@
 				399EB41428E39A4E000F7822 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		39F775A828E62200009854E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3983AFE928E5A92C003E44AE /* LaunchScreen.swift */,
+				399EB40F28E39A4D000F7822 /* MainView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +99,8 @@
 			dependencies = (
 			);
 			name = FastGlobeVPN;
+			packageProductDependencies = (
+			);
 			productName = FastGlobeVPN;
 			productReference = 399EB40A28E39A4D000F7822 /* FastGlobeVPN.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +129,8 @@
 				Base,
 			);
 			mainGroup = 399EB40128E39A4D000F7822;
+			packageReferences = (
+			);
 			productRefGroup = 399EB40B28E39A4D000F7822 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				399EB41028E39A4D000F7822 /* ContentView.swift in Sources */,
+				399EB41028E39A4D000F7822 /* MainView.swift in Sources */,
 				399EB40E28E39A4D000F7822 /* FastGlobeVPNApp.swift in Sources */,
+				3983AFEA28E5A92C003E44AE /* LaunchScreen.swift in Sources */,
+				399EB42028E4ED4B000F7822 /* VPNManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +286,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FastGlobeVPN/FastGlobeVPN.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FastGlobeVPN/Preview Content\"";
@@ -293,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FastGlobeVPN/FastGlobeVPN.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FastGlobeVPN/Preview Content\"";
