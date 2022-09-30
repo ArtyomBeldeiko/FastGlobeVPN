@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @State var isConnected = false
+    
     var body: some View {
         VStack {
             Image("disconnectedLabel")
@@ -24,7 +27,7 @@ struct MainView: View {
                 .frame(height: 70)
             
             Button {
-                
+                isConnected.toggle()
             } label: {
                 Text("Connect now")
                     .font(.title)
@@ -35,6 +38,10 @@ struct MainView: View {
             .tint(Color(uiColor: UIColor(red: 0/255, green: 148/255, blue: 252/255, alpha: 1)))
             .buttonStyle(.borderedProminent)
             .cornerRadius(40)
+            .shadow(color: .black.opacity(0.8), radius: 4, x: -2 ,y: 1)
+            .fullScreenCover(isPresented: $isConnected) {
+                ConnectedView()
+            }
         }
     }
 }

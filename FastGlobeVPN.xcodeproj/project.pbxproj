@@ -13,6 +13,7 @@
 		399EB41228E39A4E000F7822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399EB41128E39A4E000F7822 /* Assets.xcassets */; };
 		399EB41528E39A4E000F7822 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399EB41428E39A4E000F7822 /* Preview Assets.xcassets */; };
 		399EB42028E4ED4B000F7822 /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399EB41F28E4ED4B000F7822 /* VPNManager.swift */; };
+		39F539E128E773AC00B98E2A /* ConnectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F539E028E773AC00B98E2A /* ConnectedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		399EB41428E39A4E000F7822 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		399EB41F28E4ED4B000F7822 /* VPNManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
 		399EB42428E4F44B000F7822 /* FastGlobeVPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FastGlobeVPN.entitlements; sourceTree = "<group>"; };
+		39F539E028E773AC00B98E2A /* ConnectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				3983AFE928E5A92C003E44AE /* LaunchScreen.swift */,
 				399EB40F28E39A4D000F7822 /* MainView.swift */,
+				39F539E028E773AC00B98E2A /* ConnectedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				399EB41028E39A4D000F7822 /* MainView.swift in Sources */,
 				399EB40E28E39A4D000F7822 /* FastGlobeVPNApp.swift in Sources */,
+				39F539E128E773AC00B98E2A /* ConnectedView.swift in Sources */,
 				3983AFEA28E5A92C003E44AE /* LaunchScreen.swift in Sources */,
 				399EB42028E4ED4B000F7822 /* VPNManager.swift in Sources */,
 			);
