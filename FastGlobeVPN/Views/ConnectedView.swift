@@ -27,6 +27,7 @@ struct ConnectedView: View {
                 .frame(height: 70)
             
             Button {
+                VPNHandler.disconnectVPN()
                 dismiss()
             } label: {
                 Text("Disconnect")

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import NetworkExtension
 
 struct MainView: View {
     
@@ -28,6 +29,7 @@ struct MainView: View {
             
             Button {
                 isConnected.toggle()
+                VPNHandler.connectVPN()
             } label: {
                 Text("Connect now")
                     .font(.title)
@@ -45,6 +47,7 @@ struct MainView: View {
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

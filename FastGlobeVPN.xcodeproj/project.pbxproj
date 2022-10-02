@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		396A630928E8DBF800DA1748 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396A630828E8DBF800DA1748 /* KeychainService.swift */; };
+		396A630E28E9FABD00DA1748 /* vpnUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396A630D28E9FABD00DA1748 /* vpnUser.swift */; };
+		396A631028E9FF8300DA1748 /* vpnServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396A630F28E9FF8300DA1748 /* vpnServer.swift */; };
 		3983AFEA28E5A92C003E44AE /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983AFE928E5A92C003E44AE /* LaunchScreen.swift */; };
 		399EB40E28E39A4D000F7822 /* FastGlobeVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399EB40D28E39A4D000F7822 /* FastGlobeVPNApp.swift */; };
 		399EB41028E39A4D000F7822 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399EB40F28E39A4D000F7822 /* MainView.swift */; };
@@ -17,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		396A630828E8DBF800DA1748 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		396A630A28E8E16E00DA1748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		396A630D28E9FABD00DA1748 /* vpnUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vpnUser.swift; sourceTree = "<group>"; };
+		396A630F28E9FF8300DA1748 /* vpnServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vpnServer.swift; sourceTree = "<group>"; };
 		3983AFE928E5A92C003E44AE /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		399EB40A28E39A4D000F7822 /* FastGlobeVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastGlobeVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		399EB40D28E39A4D000F7822 /* FastGlobeVPNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastGlobeVPNApp.swift; sourceTree = "<group>"; };
@@ -39,10 +46,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		399EB40128E39A4D000F7822 = {
+		396A631128EA00E000DA1748 /* VPNManager */ = {
 			isa = PBXGroup;
 			children = (
 				399EB41F28E4ED4B000F7822 /* VPNManager.swift */,
+				396A630828E8DBF800DA1748 /* KeychainService.swift */,
+				396A631228EA010600DA1748 /* UserServerSettings */,
+			);
+			path = VPNManager;
+			sourceTree = "<group>";
+		};
+		396A631228EA010600DA1748 /* UserServerSettings */ = {
+			isa = PBXGroup;
+			children = (
+				396A630D28E9FABD00DA1748 /* vpnUser.swift */,
+				396A630F28E9FF8300DA1748 /* vpnServer.swift */,
+			);
+			path = UserServerSettings;
+			sourceTree = "<group>";
+		};
+		399EB40128E39A4D000F7822 = {
+			isa = PBXGroup;
+			children = (
+				396A631128EA00E000DA1748 /* VPNManager */,
 				399EB40C28E39A4D000F7822 /* FastGlobeVPN */,
 				399EB40B28E39A4D000F7822 /* Products */,
 			);
@@ -59,6 +85,7 @@
 		399EB40C28E39A4D000F7822 /* FastGlobeVPN */ = {
 			isa = PBXGroup;
 			children = (
+				396A630A28E8E16E00DA1748 /* Info.plist */,
 				39F775A828E62200009854E2 /* Views */,
 				399EB42428E4F44B000F7822 /* FastGlobeVPN.entitlements */,
 				399EB40D28E39A4D000F7822 /* FastGlobeVPNApp.swift */,
@@ -161,8 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				399EB41028E39A4D000F7822 /* MainView.swift in Sources */,
+				396A630E28E9FABD00DA1748 /* vpnUser.swift in Sources */,
 				399EB40E28E39A4D000F7822 /* FastGlobeVPNApp.swift in Sources */,
+				396A630928E8DBF800DA1748 /* KeychainService.swift in Sources */,
 				39F539E128E773AC00B98E2A /* ConnectedView.swift in Sources */,
+				396A631028E9FF8300DA1748 /* vpnServer.swift in Sources */,
 				3983AFEA28E5A92C003E44AE /* LaunchScreen.swift in Sources */,
 				399EB42028E4ED4B000F7822 /* VPNManager.swift in Sources */,
 			);
@@ -297,6 +327,7 @@
 				DEVELOPMENT_TEAM = XPQ67UU8AY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FastGlobeVPN/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,6 +358,7 @@
 				DEVELOPMENT_TEAM = XPQ67UU8AY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FastGlobeVPN/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
