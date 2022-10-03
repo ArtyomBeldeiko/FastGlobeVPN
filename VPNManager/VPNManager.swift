@@ -8,6 +8,7 @@
 import Foundation
 import NetworkExtension
 
+
 final class VPNHandler {
     
     let vpnManager = NEVPNManager.shared()
@@ -53,8 +54,6 @@ final class VPNHandler {
                 self.vpnManager.isEnabled = true
                 
                 self.vpnManager.isOnDemandEnabled = true
-                
-                
                 
                 var rules = [NEOnDemandRule]()
                 let rule = NEOnDemandRuleConnect()

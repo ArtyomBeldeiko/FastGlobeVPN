@@ -29,9 +29,15 @@ struct LaunchScreen: View {
                 Spacer()
                     .frame(height: 10)
                 
-                Text("You are using FastGlobeVPN.\nTo proceed please press Continue button.")
-                    .font(.callout)
-                    .multilineTextAlignment(.center)
+                Group {
+                    Text("You are using FastGlobeVPN.\nTo proceed please press")
+                        .font(.callout) +
+                    Text(" Continue")
+                        .font(.callout)
+                        .fontWeight(.bold) +
+                    Text(" button.")
+                }
+                .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 30)
